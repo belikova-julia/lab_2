@@ -11,5 +11,7 @@ public class DelayStatisticApp {
         }
 
         Job job = Job.getInstance();
+        job.setJarByClass(DelayStatisticApp.class);
+        job.setJobName("Delay statistics");
     }
 }
