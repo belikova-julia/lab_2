@@ -1,2 +1,4 @@
-package application;public class DelayStatisticApp {
+package application;
+
+public class DelayStatisticApp {
 }
