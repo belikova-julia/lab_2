@@ -8,5 +8,7 @@ public class DelayStatisticApp {
             System.err.println("");
             System.exit(-1);
         }
+
+        Job job = Job.getInstance();
     }
 }
