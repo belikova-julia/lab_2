@@ -22,7 +22,6 @@ public class AeroportMapper extends Mapper<LongWritable, Text, AeroportWritableC
             int code = Integer.parseInt(line[CODE_COLUMN]);
             String description = line[DESCRIPTION_COLUMN];
             context.write(new AeroportWritableComparable(code, DATA_TYPE), new Text(description));
-
         }
     }
 }
