@@ -8,5 +8,5 @@ public class FlightMapper extends Mapper<LongWritable, Text, AeroportWritableCom
     private static final String DELIMETER = ",";
     private static final int DATA_TYPE = 1;
     private static final int DEST_AEROPORT_ID_COLUMN = 14;
-    private static final int 
+    private static final int ARR_DELAY_COUMN = 18;
 }
