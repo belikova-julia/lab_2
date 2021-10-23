@@ -1,2 +1,4 @@
-package application;public class FlightMapper {
+package application;
+
+public class FlightMapper {
 }
