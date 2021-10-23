@@ -1,2 +1,4 @@
-package application;public class AeroportPartitioner {
+package application;
+
+public class AeroportPartitioner {
 }
