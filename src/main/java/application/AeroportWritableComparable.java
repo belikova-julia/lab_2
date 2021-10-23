@@ -15,7 +15,9 @@ public class AeroportWritableComparable implements WritableComparable {
         AeroportWritableComparable other = (AeroportWritableComparable)obj;
         if (this.aeroportID == other.aeroportID)
             return Integer.compare(this.dataType, other.dataType);
-        return 0;
+        if (this.aeroportID < other.aeroportID)
+            return -1;
+        return 1;
     }
 
     @Override
