@@ -13,7 +13,6 @@ public class AeroportMapper extends Mapper<LongWritable, Text, AeroportWritableC
     private static final String EXTRA_QUOT = "\"";
     private static final int DATA_TYPE = 0;
 
-
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
