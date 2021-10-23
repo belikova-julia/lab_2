@@ -7,8 +7,10 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 public class AeroportWritableComparable implements WritableComparable {
-    private int aeroportID;
-    private int dataType;
+    private int aeroportID = 0;
+    private int dataType = 0;
+
+    public AeroportWritableComparable() {}
 
     public AeroportWritableComparable(int aeroportID, int dataType) {
         this.aeroportID = aeroportID;
