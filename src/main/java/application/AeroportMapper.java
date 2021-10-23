@@ -1,2 +1,4 @@
-package application;public class AeroportMapper {
+package application;
+
+public class AeroportMapper {
 }
