@@ -11,7 +11,8 @@ public class AeroportWritableComparable implements WritableComparable {
     private int dataType;
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Object obj) {
+        AeroportWritableComparable other = (AeroportWritableComparable)obj;
         return 0;
     }
 
