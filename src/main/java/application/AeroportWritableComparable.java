@@ -1,2 +1,4 @@
-package application;public class AeroportWritableComparable {
+package application;
+
+public class AeroportWritableComparable {
 }
