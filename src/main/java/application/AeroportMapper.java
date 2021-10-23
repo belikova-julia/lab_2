@@ -11,6 +11,7 @@ public class AeroportMapper extends Mapper<LongWritable, Text, AeroportWritableC
     private static final int CODE_COLUMN = 0;
     private static final int DESCRIPTION_COLUMN = 1;
     private static final String EXTRA_QUOT = "\"";
+    private static final int DATA_TYPE = 0;
 
 
     @Override
@@ -21,7 +22,7 @@ public class AeroportMapper extends Mapper<LongWritable, Text, AeroportWritableC
                     .split(DELIMETER);
             int code = Integer.parseInt(line[CODE_COLUMN]);
             String description = line[DESCRIPTION_COLUMN];
-
+            context.write(new AeroportWritableComparable(code, ), new Text(description));
 
         }
     }
