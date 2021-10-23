@@ -10,11 +10,13 @@ public class AeroportMapper extends Mapper<LongWritable, Text, AeroportWritableC
     private static final String DELIMETER = ",";
     private static final int CODE_COLUMN = 0;
     private static final int DESCRIPTION_COLUMN = 1;
-    
+
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+        
         if (key.get() > 0) {
+            String[] line = value.toString().replace("").split(DELIMETER)
 
         }
     }
