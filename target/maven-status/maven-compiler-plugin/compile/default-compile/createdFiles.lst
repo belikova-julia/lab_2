@@ -1,0 +1,7 @@
+application/AeroportPartitioner.class
+application/AeroportWritableComparable.class
+application/AeroportMapper.class
+application/AeroportReducer.class
+application/FlightMapper.class
+application/DelayStatisticApp.class
+application/AeroportGroupingComparator.class
