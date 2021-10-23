@@ -23,5 +23,7 @@ public class AeroportReducer extends Reducer<AeroportWritableComparable, Text, T
             min = Float.min(min, delay);
             count += 1;
         }
+        Text resultStatistics = new Text(String.format("max: %f, min: %f, average: %f", min, max, sum/count));
+        if 
     }
 }
