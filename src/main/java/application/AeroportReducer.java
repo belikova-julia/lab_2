@@ -24,6 +24,8 @@ public class AeroportReducer extends Reducer<AeroportWritableComparable, Text, T
             count += 1;
         }
         Text resultStatistics = new Text(String.format("max: %f, min: %f, average: %f", min, max, sum/count));
-        if 
+        if (count > 0) {
+            context.write(aeroport, resultStatistics);
+        }
     }
 }
