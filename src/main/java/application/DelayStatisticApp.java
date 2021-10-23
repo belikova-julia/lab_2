@@ -2,6 +2,8 @@ package application;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.mapred.JobConf;
+
 import org.apache.hadoop.mapred.TextInputFormat;
 import org.apache.hadoop.mapred.lib.MultipleInputs;
 import org.apache.hadoop.mapreduce.Job;
@@ -13,7 +15,7 @@ public class DelayStatisticApp {
             System.err.println("");
             System.exit(-1);
         }
-        Job job = Job.getInstance(new Configuration(), "Delay statistics");
+        JobConf job = new JobConf(new Configuration(), Job.class);
         job.setJarByClass(DelayStatisticApp.class);
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, FlightMapper.class);
     }
