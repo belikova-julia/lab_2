@@ -22,6 +22,8 @@ public class AeroportWritableComparable implements WritableComparable {
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
+        this.aeroportID = dataInput.readInt();
+        this.dataType = dataInput.readInt();
 
     }
 }
