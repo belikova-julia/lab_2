@@ -13,6 +13,8 @@ public class AeroportWritableComparable implements WritableComparable {
     @Override
     public int compareTo(Object obj) {
         AeroportWritableComparable other = (AeroportWritableComparable)obj;
+        if (this.aeroportID == other.aeroportID)
+            return Integer.compare(this.dataType, other.dataType);
         return 0;
     }
 
