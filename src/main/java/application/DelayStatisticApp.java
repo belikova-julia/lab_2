@@ -20,6 +20,6 @@ public class DelayStatisticApp {
                 job,
                 new Path(args[0]),
                 TextInputFormat.class,
-                FlightMapper.class));
+                FlightMapper.class);
     }
 }
