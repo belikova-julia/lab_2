@@ -13,8 +13,7 @@ public class DelayStatisticApp {
             System.err.println("");
             System.exit(-1);
         }
-        Configuration conf = new Configuration();
-        Job job = Job.getInstance(conf, "Delay statistics");
+        Job job = Job.getInstance(new Configuration(), "Delay statistics");
         job.setJarByClass(DelayStatisticApp.class);
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, FlightMapper.class);
     }
