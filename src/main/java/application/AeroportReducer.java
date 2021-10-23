@@ -15,10 +15,13 @@ public class AeroportReducer extends Reducer<AeroportWritableComparable, Text, T
         float min = Float.MIN_VALUE;
         float sum = 0;
         int count = 0;
-        
-        while (iterator.hasNext()) {
-            float dalay = Float.parseFloat(iterator.next().toString());
 
+        while (iterator.hasNext()) {
+            float delay = Float.parseFloat(iterator.next().toString());
+            sum += delay;
+            max = Float.max(max, delay);
+            min = Float.min(min, delay);
+            count += 1;
         }
     }
 }
