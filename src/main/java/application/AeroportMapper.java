@@ -16,7 +16,12 @@ public class AeroportMapper extends Mapper<LongWritable, Text, AeroportWritableC
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
-            String[] line = value.toString().replace("").split(DELIMETER)
+            String[] line = value.toString()
+                    .replace(EXTRA_QUOT, "")
+                    .split(DELIMETER);
+            int codeIdx = Integer.parseInt(line[CODE_COLUMN]);
+            String description = line[DESCRIPTION_COLUMN];
+            
 
         }
     }
