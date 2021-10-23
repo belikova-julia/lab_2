@@ -10,6 +10,11 @@ public class AeroportWritableComparable implements WritableComparable {
     private int aeroportID;
     private int dataType;
 
+    public AeroportWritableComparable(int aeroportID, int dataType) {
+        this.aeroportID = aeroportID;
+        this.dataType = dataType;
+    }
+
     @Override
     public int compareTo(Object obj) {
         AeroportWritableComparable other = (AeroportWritableComparable)obj;
