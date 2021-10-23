@@ -19,9 +19,9 @@ public class AeroportMapper extends Mapper<LongWritable, Text, AeroportWritableC
             String[] line = value.toString()
                     .replace(EXTRA_QUOT, "")
                     .split(DELIMETER);
-            int codeIdx = Integer.parseInt(line[CODE_COLUMN]);
+            int code = Integer.parseInt(line[CODE_COLUMN]);
             String description = line[DESCRIPTION_COLUMN];
-            
+
 
         }
     }
